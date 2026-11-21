@@ -1,0 +1,58 @@
+.icone {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  background: var(--limao);
+  color: var(--azul-marinho);
+  font-size: 1.15rem;
+  margin-bottom: 0.9rem;
+  box-shadow: 0 0 14px var(--limao-brilho);
+}
+
+.ods {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.odsNumero {
+  width: 74px;
+  height: 74px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.odsNumero small {
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.membro {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+.membro span {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--azul-marinho);
+  color: var(--limao);
+  font-weight: 800;
+}
+.membro small {
+  display: block;
+  color: var(--texto-suave);
+}

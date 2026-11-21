@@ -1,0 +1,18 @@
+.cabecalho {
+  background: linear-gradient(135deg, var(--azul-marinho), var(--azul-royal));
+  color: var(--creme);
+  padding: 3.2rem 0 3rem;
+}
+
+.cabecalho h1 {
+  color: var(--creme);
+  margin: 0.8rem 0 0.4rem;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+}
+
+.cabecalho p {
+  opacity: 0.85;
+  max-width: 680px;
+  margin: 0;
+  font-size: 1.08rem;
+}

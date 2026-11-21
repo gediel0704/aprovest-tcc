@@ -1,0 +1,49 @@
+.texto {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.nota {
+  background: var(--azul-marinho);
+  color: var(--creme);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 6px solid var(--limao);
+}
+.nota span {
+  display: block;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.nota strong {
+  display: block;
+  font-size: 3rem;
+  color: var(--limao);
+  text-shadow: 0 0 20px var(--limao-brilho);
+  line-height: 1.1;
+}
+.nota small {
+  opacity: 0.75;
+}
+
+.competencia {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--borda);
+}
+.competencia:last-child {
+  border-bottom: none;
+}
+
+.barra {
+  height: 8px;
+  border-radius: 99px;
+  background: var(--creme-escuro);
+  margin-top: 0.4rem;
+  overflow: hidden;
+}
+.barra span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--azul-royal), var(--limao));
+}

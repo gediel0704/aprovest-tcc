@@ -1,0 +1,5 @@
+# Copie este arquivo para application-local.properties (ele não vai para o Git)
+# e coloque o usuário e a senha do seu SQL Server.
+# Só é necessário para rodar a API sozinha; o "npm run dev" configura isso automaticamente.
+spring.datasource.username=sa
+spring.datasource.password=SUA_SENHA_DO_SQL_SERVER

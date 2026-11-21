@@ -1,0 +1,236 @@
+/* =====================================================================
+   AproVest TCC - estilo global
+   Paleta: azul-marinho/royal, verde-limão cintilante e creme (off-white)
+   ===================================================================== */
+:root {
+  --azul-marinho: #0b1a4a;
+  --azul-royal: #1d3fa8;
+  --azul-claro: #e7ecfb;
+  --limao: #c6f53b;
+  --limao-forte: #a8dc12;
+  --limao-brilho: rgba(198, 245, 59, 0.55);
+  --creme: #fbf7ec;
+  --creme-escuro: #f1ead6;
+  --branco: #fffdf8;
+  --texto: #14203f;
+  --texto-suave: #5b6478;
+  --borda: #e6dfca;
+  --sucesso: #1f9d55;
+  --erro: #d63a3a;
+  --raio: 14px;
+  --sombra: 0 6px 20px rgba(11, 26, 74, 0.08);
+
+  /* Bootstrap usa estas variáveis */
+  --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --bs-body-color: var(--texto);
+  --bs-body-bg: var(--creme);
+  --bs-primary: var(--azul-royal);
+  --bs-primary-rgb: 29, 63, 168;
+  --bs-link-color: var(--azul-royal);
+  --bs-link-color-rgb: 29, 63, 168;
+  --bs-link-hover-color: var(--azul-marinho);
+  --bs-border-color: var(--borda);
+}
+
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--texto);
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--azul-marinho);
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------------- Botões ---------------- */
+.btn {
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 0.55rem 1.1rem;
+}
+
+/* botão principal: verde-limão cintilante com texto azul-marinho */
+.btn-limao {
+  position: relative;
+  overflow: hidden;
+  background: var(--limao);
+  border: 1px solid var(--limao-forte);
+  color: var(--azul-marinho);
+  box-shadow: 0 0 0 0 var(--limao-brilho);
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+}
+.btn-limao:hover,
+.btn-limao:focus {
+  background: #d4ff52;
+  color: var(--azul-marinho);
+  box-shadow: 0 0 18px var(--limao-brilho);
+  transform: translateY(-1px);
+}
+/* brilho que atravessa o botão */
+.btn-limao::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(110deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  animation: cintilar 3.2s ease-in-out infinite;
+}
+@keyframes cintilar {
+  0%, 60% { left: -60%; }
+  100% { left: 130%; }
+}
+
+.btn-azul {
+  background: var(--azul-marinho);
+  border: 1px solid var(--azul-marinho);
+  color: var(--creme);
+}
+.btn-azul:hover,
+.btn-azul:focus {
+  background: var(--azul-royal);
+  border-color: var(--azul-royal);
+  color: #fff;
+}
+
+.btn-contorno {
+  background: transparent;
+  border: 1.5px solid var(--azul-marinho);
+  color: var(--azul-marinho);
+}
+.btn-contorno:hover {
+  background: var(--azul-marinho);
+  color: var(--creme);
+}
+
+/* ---------------- Cartões e títulos ---------------- */
+.cartao {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 1.4rem;
+}
+
+.titulo-pagina {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.subtitulo-pagina {
+  color: var(--texto-suave);
+  margin-bottom: 1.5rem;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--azul-claro);
+  color: var(--azul-royal);
+}
+.etiqueta-limao {
+  background: var(--limao);
+  color: var(--azul-marinho);
+}
+.etiqueta-creme {
+  background: var(--creme-escuro);
+  color: var(--texto);
+}
+.etiqueta-sucesso {
+  background: #dcf5e6;
+  color: var(--sucesso);
+}
+.etiqueta-erro {
+  background: #fbe3e3;
+  color: var(--erro);
+}
+
+.destaque-limao {
+  background: linear-gradient(transparent 60%, var(--limao) 60%);
+  padding: 0 0.15rem;
+}
+
+/* ---------------- Formulários ---------------- */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border-color: var(--borda);
+  background-color: #fff;
+  padding: 0.6rem 0.85rem;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--azul-royal);
+  box-shadow: 0 0 0 0.2rem rgba(198, 245, 59, 0.6);
+}
+.form-label {
+  font-weight: 600;
+  color: var(--azul-marinho);
+}
+
+/* ---------------- Tabelas ---------------- */
+.tabela {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.tabela th {
+  background: var(--azul-marinho);
+  color: var(--creme);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.75rem;
+  text-align: left;
+}
+.tabela th:first-child { border-top-left-radius: 10px; }
+.tabela th:last-child { border-top-right-radius: 10px; }
+.tabela td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--borda);
+  vertical-align: middle;
+  background: var(--branco);
+}
+.tabela tr:hover td {
+  background: #fffbe9;
+}
+
+.alerta-erro {
+  background: #fbe3e3;
+  color: var(--erro);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+}
+.alerta-sucesso {
+  background: #dcf5e6;
+  color: var(--sucesso);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+}
+.alerta-aviso {
+  background: #fff7d6;
+  color: #7a5b00;
+  border: 1px dashed #e8c84a;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+}
+
+.texto-suave {
+  color: var(--texto-suave);
+}
+
+.texto-quebrado {
+  white-space: pre-line;
+}

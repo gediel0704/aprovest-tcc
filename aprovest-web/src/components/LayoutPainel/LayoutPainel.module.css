@@ -1,0 +1,139 @@
+.painel {
+  display: flex;
+  min-height: 100vh;
+  background: var(--creme);
+}
+
+.lateral {
+  width: 250px;
+  flex-shrink: 0;
+  background: var(--azul-marinho);
+  color: var(--creme);
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 0.9rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.logo {
+  padding: 0 0.4rem 1.2rem;
+}
+
+.secao {
+  display: block;
+  margin: 1.1rem 0.6rem 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--limao);
+  opacity: 0.85;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.62rem 0.8rem;
+  border-radius: 10px;
+  color: var(--creme);
+  font-weight: 600;
+  opacity: 0.82;
+  margin-bottom: 0.15rem;
+}
+.item i {
+  width: 18px;
+  text-align: center;
+}
+.item:hover {
+  background: rgba(251, 247, 236, 0.08);
+  opacity: 1;
+  color: var(--creme);
+}
+.ativo {
+  background: var(--limao);
+  color: var(--azul-marinho) !important;
+  opacity: 1;
+  box-shadow: 0 0 16px var(--limao-brilho);
+}
+
+.voltarSite {
+  margin-top: auto;
+  color: var(--creme);
+  opacity: 0.7;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.8rem;
+}
+.voltarSite:hover {
+  opacity: 1;
+  color: var(--limao);
+}
+
+.principal {
+  flex: 1;
+  min-width: 0;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.8rem;
+  background: var(--branco);
+  border-bottom: 1px solid var(--borda);
+}
+
+.perfil {
+  font-weight: 700;
+  color: var(--texto-suave);
+  margin-right: auto;
+}
+
+.botaoMenu {
+  display: none;
+  background: var(--azul-marinho);
+  color: var(--creme);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.conteudo {
+  padding: 1.8rem;
+  max-width: 1200px;
+}
+
+.fundo {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .lateral {
+    position: fixed;
+    left: -270px;
+    z-index: 40;
+    transition: left 0.25s;
+  }
+  .lateral.aberto {
+    left: 0;
+  }
+  .botaoMenu {
+    display: block;
+  }
+  .conteudo {
+    padding: 1.2rem;
+  }
+  .topo {
+    padding: 0.8rem 1.2rem;
+  }
+  .fundo {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(11, 26, 74, 0.45);
+    z-index: 30;
+  }
+}

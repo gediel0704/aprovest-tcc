@@ -1,0 +1,35 @@
+.alternativa {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.4rem;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  border: 1.5px solid transparent;
+}
+
+.correta {
+  background: #f3ffd4;
+  border-color: var(--limao-forte);
+}
+
+.marcador {
+  cursor: pointer;
+}
+.marcador input {
+  display: none;
+}
+.marcador span {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: var(--creme-escuro);
+  color: var(--azul-marinho);
+}
+.correta .marcador span {
+  background: var(--limao);
+  box-shadow: 0 0 12px var(--limao-brilho);
+}

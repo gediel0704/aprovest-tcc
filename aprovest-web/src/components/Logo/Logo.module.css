@@ -1,0 +1,31 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--azul-marinho);
+  letter-spacing: -0.02em;
+}
+
+.icone {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  background: var(--limao);
+  color: var(--azul-marinho);
+  box-shadow: 0 0 14px var(--limao-brilho);
+}
+
+.vest {
+  color: var(--azul-royal);
+}
+
+.claro {
+  color: var(--creme);
+}
+.claro .vest {
+  color: var(--limao);
+}

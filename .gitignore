@@ -1,0 +1,24 @@
+# Dependências e builds
+node_modules/
+dist/
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Ambiente e senhas
+.env
+.env.local
+*.local
+application-local.properties
+
+# IDEs e sistema
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+.claude/

@@ -1,0 +1,36 @@
+.busca {
+  position: relative;
+  max-width: 640px;
+}
+.busca i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--azul-royal);
+}
+.busca input {
+  padding: 0.85rem 1rem 0.85rem 2.6rem;
+  font-size: 1.05rem;
+}
+
+.item {
+  padding: 1rem 1.2rem;
+}
+
+.pergunta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 700;
+  color: var(--azul-marinho);
+  text-align: left;
+}
+.pergunta i {
+  color: var(--azul-royal);
+}

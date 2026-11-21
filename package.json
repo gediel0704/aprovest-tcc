@@ -1,0 +1,17 @@
+{
+  "name": "aprovest-tcc",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AproVest TCC - preparação para vestibulares (Curso Técnico em Informática - FIEB/ITB, INF2CM)",
+  "type": "module",
+  "scripts": {
+    "postinstall": "cd aprovest-web && npm install --no-audit --no-fund",
+    "dev": "node scripts/iniciar.mjs",
+    "dev:all": "node scripts/iniciar.mjs",
+    "web": "cd aprovest-web && npm run dev:web",
+    "build": "cd aprovest-web && npm run build"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

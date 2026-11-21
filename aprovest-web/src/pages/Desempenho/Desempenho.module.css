@@ -1,0 +1,20 @@
+.barra {
+  height: 12px;
+  border-radius: 99px;
+  background: var(--creme-escuro);
+  margin-top: 0.35rem;
+  overflow: hidden;
+}
+
+.barra span {
+  display: block;
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--limao-forte), var(--limao));
+  box-shadow: 0 0 10px var(--limao-brilho);
+}
+
+.barra span.baixo {
+  background: linear-gradient(90deg, var(--azul-royal), #5b7be0);
+  box-shadow: none;
+}
